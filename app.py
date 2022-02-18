@@ -39,11 +39,6 @@ def plot_altair(xcol,ycol):
         tooltip='life_expectancy').interactive()
     return chart.to_html()
 
-# @app.callback(
-#     Output('scatter', 'srcDoc'),
-#     Input('xslider', 'value'))
-# def update_output(xmax):
-#     return plot_altair(xmax)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
